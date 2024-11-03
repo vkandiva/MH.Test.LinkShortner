@@ -20,4 +20,4 @@ Actions:
           Run: |
             dotnet sonarscanner begin /k:"vkandiva_MH.Test.LinkShortner" /o:"vkandiva" /d:sonar.token="${Secrets.SONAR_TOKEN}" /d:sonar.host.url="https://sonarcloud.io"
             dotnet build
-            dotnet sonarscanner end /d:sonar.token="${Secrets.SONAR_TOKEN}"
+            dotnet sonarscanner end /d:sonar.token="923f391add006fa897e1dc28eb51c7691394eb07"
