@@ -2,25 +2,24 @@
 using Microsoft.EntityFrameworkCore;
 using DbContext = Microsoft.EntityFrameworkCore.DbContext;
 
-namespace MH.Test.LinkShortner.WebAPIs.DataLayer
+namespace MH.Test.LinkShortner.WebAPIs.DataLayer;
+
+/// <summary>
+/// DB context class for the Database
+/// </summary>
+public class MortgageHouseDbContext : DbContext
 {
-    /// <summary>
-    /// DB context class for the Database
-    /// </summary>
-    public class MortgageHouseDbContext : DbContext
+    public MortgageHouseDbContext(DbContextOptions<MortgageHouseDbContext> options) : base(options)
     {
-        public MortgageHouseDbContext(DbContextOptions<MortgageHouseDbContext> options) : base(options)
-        {
-        }
+    }
 
-        public Microsoft.EntityFrameworkCore.DbSet<UrlMapping> UrlMappings { get; set; }
+    public Microsoft.EntityFrameworkCore.DbSet<UrlMapping> UrlMappings { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<UrlMapping>()
-                .HasKey(e => e.Id);
-        }
+        modelBuilder.Entity<UrlMapping>()
+            .HasKey(e => e.Id);
     }
 }
