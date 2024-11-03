@@ -15,3 +15,14 @@ The URL shortening basically uses random generator to generate a random string o
 
 The URLs are stored in an in memory database which stores all the generated data till the WEB APIs are running. This could be further extended to a database of our choice.
 
+## UML Sequence Diagram
+
+![Sequence diagram](https://github.com/user-attachments/assets/4b79e40b-70bb-43b7-b7d0-917286bab6d7)
+
+## Class Diagram
+
+![Class Diagram](https://github.com/user-attachments/assets/f3fa70f7-89d4-4233-a8a9-6c8734beb54f)
+
+## ERD Diagram
+
+![ER Diagram](https://github.com/user-attachments/assets/4e37747e-d0c2-44d3-baa8-13e50cce102e)
