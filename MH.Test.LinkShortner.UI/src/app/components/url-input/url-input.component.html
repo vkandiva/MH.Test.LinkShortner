@@ -1,0 +1,8 @@
+<!-- Html file for Url Input component -->
+<div class="input-group">
+  <input type="text"
+         [(ngModel)]="originalUrl"
+         placeholder="Type URL here:"
+         class="form-control" />
+  <button (click)="submitUrl()" class="btn btn-primary">Generate</button>
+</div>

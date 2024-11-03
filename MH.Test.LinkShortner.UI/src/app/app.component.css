@@ -1,0 +1,22 @@
+/* src/app/components/url-form/url-form.component.css */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  flex-grow: .5;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 15px;
+}
+
+.error-message {
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

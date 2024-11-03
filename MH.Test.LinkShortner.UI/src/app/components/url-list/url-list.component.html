@@ -1,0 +1,24 @@
+<!-- Html File for Url List component -->
+<div class="url-shortener-container">
+  <!-- URL Input Component for submitting new URLs -->
+  <url-input (urlSubmitted)="handleUrlSubmission($event)"></url-input>
+
+  <!-- Display the list of shortened URLs -->
+  <h3>Shortened URL List</h3>
+  <table class="table">
+    <th>Original URL</th>
+    <th>Shortened URL</th>
+    <th>Created On</th>
+
+    <tr *ngFor="let url of urlMapping">
+      <td>{{ url.originalUrl }}</td>
+      <td><a [href]="url.shortenedUrl" target="_blank">{{ url.shortenedUrl }}</a></td>
+      <td>{{ url.createdDate | date:'yyyy-MM-dd' }}</td>
+    </tr>
+  </table>
+  <br />
+  <!-- Display error message, if any -->
+  <div *ngIf="errorMessage" class="error-message">
+    <h4> {{ errorMessage }}</h4>
+  </div>
+</div>
