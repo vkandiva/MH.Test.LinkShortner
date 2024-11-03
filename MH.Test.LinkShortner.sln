@@ -14,10 +14,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MH.Test.LinkShortner.WebAPI
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{30571BCD-8D46-4AD3-96EB-E484E33A65F6}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\Class Diagram.jpg = ..\..\..\Downloads\Class Diagram.jpg
-		..\..\..\OneDrive\Desktop\ER Diagram.png = ..\..\..\OneDrive\Desktop\ER Diagram.png
+		Class Diagram.jpg = Class Diagram.jpg
+		ER Diagram.png = ER Diagram.png
 		README.md = README.md
-		..\..\..\Downloads\Sequence diagram.jpg = ..\..\..\Downloads\Sequence diagram.jpg
+		Sequence diagram.jpg = Sequence diagram.jpg
 	EndProjectSection
 EndProject
 Global
